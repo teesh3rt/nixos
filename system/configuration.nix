@@ -58,6 +58,8 @@
 
   services.openssh.enable = true;
 
+  nixpkgs.config.allowUnfree = true;
+
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # This option defines the first version of NixOS you have installed on this particular machine,
