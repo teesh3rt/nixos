@@ -7,6 +7,7 @@
     ./apps/firefox.nix
     ./apps/kitty.nix
     ./hw/nvidia.nix
+    ./generic/styling.nix
   ];
 
   wm = {
@@ -20,5 +21,9 @@
 
   hw = {
     nvidia.enable = true;
+  };
+
+  generic = {
+    styling.enable = true;
   };
 }

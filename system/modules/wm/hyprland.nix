@@ -20,6 +20,10 @@
       NIXOS_OZONE_WL="1";
     };
 
+    environment.systemPackages = [
+      pkgs.rofi-wayland
+    ];
+
     hardware.graphics.enable = true;
 
     xdg.portal = {
