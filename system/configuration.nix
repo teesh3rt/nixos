@@ -60,6 +60,12 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    users.ilay = import ../home/home.nix;
+  };
+
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # This option defines the first version of NixOS you have installed on this particular machine,
