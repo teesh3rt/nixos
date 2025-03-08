@@ -2,7 +2,6 @@
 
 {
   options = {
-    wm.gnome.enable = lib.mkEnableOption "Whether or not to enable GNOME";
   };
   config = lib.mkIf config.wm.gnome.enable {
     services.xserver.enable = true;

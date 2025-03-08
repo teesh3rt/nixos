@@ -6,7 +6,6 @@
   ];
 
   options = {
-    wm.hyprland.enable = lib.mkEnableOption "Whether to enable Hyprland";
   };
 
   config = lib.mkIf config.wm.hyprland.enable {

@@ -2,7 +2,6 @@
 
 {
   options = {
-    hw.nvidia.enable = lib.mkEnableOption "Enable NVIDIA's drivers";
   };
   config = lib.mkIf config.hw.nvidia.enable {
     hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.production;

@@ -9,21 +9,4 @@
     ./hw/nvidia.nix
     ./generic/styling.nix
   ];
-
-  wm = {
-    gnome.enable = true;
-    hyprland.enable = true;
-  };
-
-  apps = {
-    firefox.enable = true;
-  };
-
-  hw = {
-    nvidia.enable = true;
-  };
-
-  generic = {
-    styling.enable = true;
-  };
 }

@@ -2,7 +2,6 @@
 
 {
   options = {
-    generic.styling.enable = lib.mkEnableOption "Whether or not tn enable Stylix";
   };
 
   config = lib.mkIf config.generic.styling.enable {
