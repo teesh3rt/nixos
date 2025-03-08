@@ -54,11 +54,12 @@ lib.mkIf config.wm.hyprland.enable {
       "$mainMod" = "SUPER";
 
       bind = [
-        "$mainMod, Q, exec, $terminal"
-        "$mainMod, C, killactive"
+        "$mainMod, Return, exec, $terminal"
+        "$mainMod, Q, killactive"
         "$mainMod, M, exit"
         "$mainMod, V, togglefloating"
-        "$mainMod, R, exec, $menu"
+        "$mainMod, F, fullscreen"
+        "$mainMod, D, exec, $menu"
 
         "$mainMod, left, movefocus, l"
         "$mainMod, right, movefocus, r"
@@ -90,6 +91,7 @@ lib.mkIf config.wm.hyprland.enable {
 
       bindm = [
         "$mainMod, mouse:272, movewindow"
+        "$mainMod, mouse:273, resizewindow"
       ];
     };
   };
