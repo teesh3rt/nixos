@@ -3,6 +3,7 @@
 {
   imports = [
     ../apps/kitty.nix
+    ../apps/rofi.nix
   ];
 
   options = {
@@ -19,10 +20,6 @@
       NIXOS_OZONE_WL="1";
     };
 
-    environment.systemPackages = [
-      pkgs.rofi-wayland
-    ];
-
     hardware.graphics.enable = true;
 
     xdg.portal = {
@@ -30,6 +27,7 @@
       extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
     };
 
+    apps.rofi.enable = true;
     apps.kitty.enable = true;
   };
 }

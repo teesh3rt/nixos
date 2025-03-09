@@ -9,12 +9,12 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
 
-      # Include my modules
-      ./modules
-
       # Include the file telling enabled or disabled
       ../options.nix
       ../settings.nix
+
+      # Include my modules
+      ./modules
     ];
 
   # Use the systemd-boot EFI boot loader.

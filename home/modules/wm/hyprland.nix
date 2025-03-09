@@ -8,7 +8,7 @@ lib.mkIf config.wm.hyprland.enable {
       monitor = ",preffered,auto,0.8";
 
       "$terminal" = "${pkgs.kitty}/bin/kitty";
-      "$menu" = "${pkgs.rofi-wayland}/bin/rofi -show drun";
+      "$menu" = "${config.apps.rofi.package}/bin/rofi -show drun";
 
       exec-once = [
         "$terminal"

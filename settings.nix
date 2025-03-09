@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   wm = {
@@ -9,7 +9,10 @@
   apps = {
     firefox.enable = true;
     kitty.enable = true;
-    rofi.enable = true;
+    rofi = {
+      enable = true;
+      package = pkgs.rofi-wayland;
+    };
     vim.enable = true;
   };
 
