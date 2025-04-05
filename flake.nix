@@ -15,7 +15,12 @@
       modules = [
         home-manager.nixosModules.home-manager
         stylix.nixosModules.stylix
-        ./system/configuration.nix
+        ./taki/system/configuration.nix
+      ];
+    };
+    nixosConfigurations.sushi = lib.nixosSystem {
+      modules = [
+        ./sushi/system/configuration.nix
       ];
     };
   };
